@@ -1,0 +1,1 @@
+<h1>Category ID 2 Page</h1>
