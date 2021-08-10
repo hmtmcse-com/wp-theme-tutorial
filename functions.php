@@ -34,4 +34,21 @@ function exp_register_taxonomy_course() {
 }
 add_action( 'init', 'exp_register_taxonomy_course');
 
+
+function pt_custom_post_type() {
+    register_post_type('pt-product',
+        array(
+            'labels'      => array(
+                'name'          => __( 'Products', 'textdomain' ),
+                'singular_name' => __( 'Product', 'textdomain' ),
+            ),
+            'public'      => true,
+            'has_archive' => true,
+            'rewrite'     => array( 'slug' => 'product' ), // my custom slug
+        )
+    );
+}
+add_action('init', 'pt_custom_post_type');
+
+
 ?>

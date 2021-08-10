@@ -1,0 +1,1 @@
+<h1>Image MIME Type</h1>
